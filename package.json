@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
+    "build": "esbuild index.js --bundle --platform=node --outfile=dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,5 +14,8 @@
   "dependencies": {
     "draft-js": "^0.11.7",
     "jsdom": "^24.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5"
   }
 }
